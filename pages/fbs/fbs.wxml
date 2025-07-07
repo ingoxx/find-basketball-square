@@ -1,0 +1,5 @@
+<!--pages/fbs/fbs.wxml-->
+<!-- <text>pages/fbs/fbs.wxml</text> -->
+<view class="box">
+  <text class="basket">basketball</text>
+</view>
