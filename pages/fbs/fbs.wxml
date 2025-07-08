@@ -1,5 +1,103 @@
 <!--pages/fbs/fbs.wxml-->
 <!-- <text>pages/fbs/fbs.wxml</text> -->
 <view class="box">
-  <text class="basket">basketball</text>
+  <view class="container-c">
+    <view class="location">
+      <text class="coordinate">📍 经纬度</text>
+    </view>
+    <view class="search">
+      <view class="s-p">
+        <input class="s-p-1" auto-focus placeholder="输入内容搜索"/>
+      </view>
+      <view class="s-b">
+        <van-row gutter="16">
+          <van-col span="8" custom-class="van-c">
+            <van-button round size="small" custom-style="width:170rpx" custom-class="{{ isActive ? 'van-b-isactive' : '' }}" bind:click="onSelected">
+              <van-icon name="map-marked" /> 所有
+            </van-button>
+          </van-col>
+          <van-col span="8" custom-class="van-c">
+            <van-button round size="small" custom-style="width:170rpx">
+              <van-icon name="location" /> 距离最近
+            </van-button>
+          </van-col>
+          <van-col span="8" custom-class="van-c">
+            <van-button round size="small" custom-style="width:170rpx">
+              <van-icon name="wap-home" /> 城中村
+            </van-button>
+          </van-col>
+          <van-col span="8" custom-class="van-c">
+            <van-button round size="small" custom-style="width:170rpx">
+              <van-icon name="fire" /> 公园
+            </van-button>
+          </van-col>
+        </van-row>
+      </view>
+    </view>
+    <view class="card-1">
+      <view class="card-1-1">
+        <view class="img">
+          <van-image round fit="cover" width="150" height="150" src="https://mp-578c2584-f82c-45e7-9d53-51332c711501.cdn.bspapp.com/wx-fbs/bk2.svg" />
+        </view>
+        <view class="addr">
+          <text class="t-f">深圳市观澜田背一村</text>
+        </view>
+        <view class="distance">
+          <text class="t-f">📍 600米</text>
+        </view>
+        <view class="tags">
+          <van-row gutter="16">
+            <van-col span="12">
+              <van-tag type="primary">室外</van-tag>
+            </van-col>
+            <van-col span="12">
+              <van-tag type="primary">棚顶</van-tag>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+      <view class="card-1-1">
+        <view class="img">
+          <van-image round fit="cover" width="150" height="150" src="https://mp-578c2584-f82c-45e7-9d53-51332c711501.cdn.bspapp.com/wx-fbs/bk2.svg" />
+        </view>
+        <view class="addr">
+          <text class="t-f">深圳市观澜田背一村</text>
+        </view>
+        <view class="distance">
+          <text class="t-f">📍 600米</text>
+        </view>
+        <view class="tags">
+          <van-row gutter="16">
+            <van-col span="12">
+              <van-tag type="primary">室外</van-tag>
+            </van-col>
+            <van-col span="12">
+              <van-tag type="primary">棚顶</van-tag>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+      <view class="card-1-1">
+        <view class="img">
+          <van-image round fit="cover" width="150" height="150" src="https://mp-578c2584-f82c-45e7-9d53-51332c711501.cdn.bspapp.com/wx-fbs/bk2.svg" />
+        </view>
+        <view class="addr">
+          <text class="t-f">深圳市观澜田背一村</text>
+        </view>
+        <view class="distance">
+          <text class="t-f">📍 600米</text>
+        </view>
+        <view class="tags">
+          <van-row gutter="16">
+            <van-col span="12">
+              <van-tag type="primary">室外</van-tag>
+            </van-col>
+            <van-col span="12">
+              <van-tag type="primary">棚顶</van-tag>
+            </van-col>
+          </van-row>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

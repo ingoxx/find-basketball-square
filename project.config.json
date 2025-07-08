@@ -25,7 +25,5 @@
     "tabSize": 2
   },
   "appid": "wx7bbd93dff3a5c745",
-  "useCompilerPlugins": [
-    "sass"
-  ]
+  "useCompilerPlugins": []
 }

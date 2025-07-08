@@ -5,16 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isActive: false,
   },
+
+  // 自定义逻辑
+  onSelected() {
+    console.log("in")
+    this.setData({
+      isActive: true
+    });
+  },
+
 // 设置当前页的标题
 setNavigatInfo() {
   wx.setNavigationBarColor({
     frontColor: "#ffffff",
-    backgroundColor: "#464e5b",
+    backgroundColor: "#6a72d9",
   });
   wx.setNavigationBarTitle({
-    title: '🏀 篮球场',
+    title: '🏀 篮球场集合',
   });
 },
   /**
